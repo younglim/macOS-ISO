@@ -7,7 +7,7 @@ Run:
 `sudo ./create-macOS-High-Sierra-ISO.sh`
 
 
-=== Virtualbox Guest Configuration ===
+### Virtualbox Guest Configuration
 
 Configure the following settings for installing Mac OS X guest on Mac OS hosts:
 
