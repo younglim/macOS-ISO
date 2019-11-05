@@ -3,7 +3,7 @@ hdiutil create -o /tmp/MojaveBase.cdr -size 7316m -layout SPUD -fs HFS+J
 hdiutil attach /tmp/MojaveBase.cdr.dmg -noverify -mountpoint /Volumes/install_build
 asr restore -source /Applications/Install\ macOS\ Mojave.app/Contents/SharedSupport/BaseSystem.dmg -target /Volumes/install_build -noprompt -noverify -erase
 
-cp -R /Volumes/Mojave/Packages /Volumes/macOS\ Base\ System/System/Installation
+cp -R /Volumes/Mojave/Packages/* /Volumes/macOS\ Base\ System/System/Installation
 
 
 hdiutil detach /Volumes/macOS\ Base\ System/
