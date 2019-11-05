@@ -2,7 +2,7 @@ hdiutil attach /Applications/Install\ macOS\ High\ Sierra.app/Contents/SharedSup
 hdiutil create -o /tmp/HighSierraBase.cdr -size 7316m -layout SPUD -fs HFS+J
 hdiutil attach /tmp/HighSierraBase.cdr.dmg -noverify -mountpoint /Volumes/install_build
 asr restore -source /Applications/Install\ macOS\ High\ Sierra.app/Contents/SharedSupport/BaseSystem.dmg -target /Volumes/install_build -noprompt -noverify -erase
-cp -R /Volumes/highsierra/Packages /Volumes/OS\ X\ Base\ System/System/Installation
+cp -R /Volumes/highsierra/Packages/* /Volumes/OS\ X\ Base\ System/System/Installation
 hdiutil detach /Volumes/OS\ X\ Base\ System/
 hdiutil detach /Volumes/highsierra/
 mv /tmp/HighSierraBase.cdr.dmg /tmp/BaseSystem.dmg
