@@ -1,8 +1,8 @@
-# macOS-High-Sierra-ISO
+# Create macOS ISO File
 
-Creates macOS High Sierra ISO file from High Sierra download on Mac App Store.
+Creates macOS ISO file from High Sierra download on Mac App Store. Refer to repository's root folder for shell file of each OS version.
 
-Run:
+For example, run:
 
 `sudo ./create-macOS-High-Sierra-ISO.sh`
 
